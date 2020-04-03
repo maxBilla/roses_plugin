@@ -1,0 +1,196 @@
+.row {
+    width: 100% !important;
+    margin: 1% 0% 1% 1% !important;
+}
+
+.title_competition {
+    font-size: 1.4em;
+    color: #123366;
+}
+
+.label_checkbox {
+    margin: 0% 0% 2% 4% !important;
+}
+
+.pill_checkbox {
+    padding: 1% 4% 1% 2% !important;
+}
+
+.container_plugin {
+    margin: 1% 2% 0% 0% !important;
+}
+
+th {
+    border-bottom: none !important;
+}
+
+.alert_perso {
+    width: 35% !important;
+    text-align: center;
+    float: none;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.alert_perso_modal {
+    text-align: center;
+    float: none;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+input[type="date"] {
+    padding: 0px !important;
+}
+
+.badge {
+    margin: 1% !important;
+}
+
+.btn_perso_sm {
+    float: right;
+    margin: 2% 14% 0% 0%;
+}
+
+.field_nage {
+    width: 100% !important;
+    height: 40%;
+    font-size: 12px;
+    padding: 0% 0% 0% 5% !important;
+}
+
+.btn_delete_nage {
+    color: white !important;
+    float: right !important;
+    width: 10%!important;
+    max-height: 23px!important;
+    padding: 0% 1% 2% 1%!important;
+}
+
+.field_perso {
+    height: 60%;
+    display: block !important;
+    margin-bottom: 2% !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 1px solid black !important;
+}
+
+.label_perso {
+    font-size: 1em;
+    float: center;
+    margin-top: 4%;
+}
+
+.nage_list {
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.logo_admin {
+    opacity: 0.8;
+    float: right;
+    margin: 1%;
+    margin-right: 10%;
+    width: 7%;
+    height: auto;
+}
+
+.custom-table-show-competition {
+    max-height: 400px !important;
+}
+
+.custom-modal-xl {
+    max-width: 55% !important;
+}
+
+.field_container {
+    margin: 2% auto;
+    text-align: center;
+}
+
+.perso_container {
+    background: #d4d4d4 !important;
+}
+
+.admin_td_btn_container {
+    width: 100% !important;
+}
+
+.admin_td_btn {
+    height: 23px !important;
+    padding: 0% 0% 0% 0% !important;
+    width: 30% !important;
+    margin: 1% 1% 1% 1% !important;
+}
+
+.table-wrapper-scroll-y {
+    width: 100%;
+    max-height: 600px;
+    overflow-y: scroll;
+    font-size: 14px;
+}
+
+.tdAdmin {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.cld-datetime {
+    margin-bottom: 5% !important;
+}
+
+.cld-main {
+    width: 100% !important;
+    border-radius: 10px;
+    margin: 1% 1% 1% 1%;
+    padding: 1% 1% 0% 1%;
+    background-color: #f1f1f1;
+}
+
+.cld-number {
+    padding: 20% !important;
+}
+
+.cld-day.today .cld-number {
+    background: #e70971 !important;
+    color: #fff;
+    border-radius: 8px !important;
+}
+
+.cld-number.eventday {
+    font-weight: bold !important;
+    color: #e70971 !important;
+}
+
+.cld-main svg {
+    fill: #e70971 !important;
+}
+
+.btn_form {
+    float: none;
+    margin-left: 45%;
+    margin-right: 15%;
+}
+
+.modal-footer {
+    justify-content: center !important;
+}
+
+.modal_checkbox {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.modal_nage_item {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.modal_nages_list {
+    margin: 1% !important;
+}
