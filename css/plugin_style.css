@@ -114,17 +114,17 @@ input[type="date"] {
 }
 
 .perso_container {
-    background: #d4d4d4 !important;
+    /*background: #d4d4d4 !important;*/
 }
 
 .admin_td_btn_container {
-    width: 100% !important;
+    width: 50% !important;
 }
 
 .admin_td_btn {
     height: 23px !important;
     padding: 0% 0% 0% 0% !important;
-    width: 30% !important;
+    width: 10% !important;
     margin: 1% 1% 1% 1% !important;
 }
 

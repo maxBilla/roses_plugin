@@ -99,9 +99,12 @@ class Roses_Plugin
     public function page_plugin_html()
     {
 
+        $competitions = Roses_Config::getCompetitions();
+        $competitions = json_decode(json_encode($competitions), true);
+        
         $_SESSION['competition_edit_nonce'] = wp_create_nonce('competition_edit_nonce');
 
-        //$this->load_scripts();
+        $this->load_scripts();
 
         echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>';
         echo '<script type="text/javascript" src="' . plugin_dir_url(__FILE__) . 'js/main.js"></script>';
@@ -110,10 +113,7 @@ class Roses_Plugin
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="' . plugin_dir_url(__FILE__) . 'css/plugin_style.css' . '">';
 
-        $competitions = Roses_Config::getCompetitions();
-        $competitions = json_decode(json_encode($competitions), true);
-
-        if (isset($_POST)) {
+        if (isset($_POST) && !empty($_POST)) {
             $this->handle_post();
         }
 

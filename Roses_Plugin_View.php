@@ -1,8 +1,7 @@
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <div class="container_plugin">
     <h1>US Chambray Natation ° Plugin des Roses <img src="<?= plugin_dir_url(__FILE__) . 'lib/logo.jpg' ?>" class='logo_admin'> </h1>
@@ -30,6 +29,7 @@
         echo '<div id="alert_perso" class="alert alert-danger alert_perso alert-dismissible">' . $this->msgGlobal['error'] . '</div>';
     }
     ?>
+
 
     <div id="alert_placeholder" class="alert_placeholder"></div>
 
@@ -142,7 +142,7 @@
                                 <center>Date rdv</center>
                             </th>
                             <th class="tdAdmin">
-                                <center>Date max<br> d'inscription</center>
+                                <center>Date max d'inscription</center>
                             </th>
                             <th></th>
                         </tr>
@@ -169,10 +169,13 @@
                                 <td class="tdAdmin"><?= $dateRdv ?></td>
                                 <td class="tdAdmin"><?= $dateMax ?></td>
                                 <td class="tdAdmin admin_td_btn_container">
-                                    <div class="row">
+                                    <div class="row justify-content-center" id="btn-container">
                                         <a style="color: white;" class="btn btn-success btn-sm admin_td_btn" onclick="update_competition('show_competition', <?= $competition->id ?>)"><i class="fa fa-eye fa-2" aria-hidden="true"></i></a>
                                         <a style="color: white;" class="btn btn-info btn-sm admin_td_btn" onclick="update_competition('show_edit', <?= $competition->id ?>)"><i class="fa fa-pencil fa-2" aria-hidden="true"></i></a>
                                         <a style="color: white;" class="btn btn-danger btn-sm admin_td_btn" onclick="update_competition('delete', <?= $competition->id ?>)"><i class="fa fa-trash fa-2" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="row" id="btn-container-loader">
+                                    
                                     </div>
                                 </td>
                             </tr>
@@ -359,7 +362,7 @@
                             </div>
                             <div class="col-3">
                                 <p class="note"><b>Label</b><br>
-                                    <p style="font-size: 11px;">(Affiché à l'utilisateur)</p>
+                                <p style="font-size: 11px;">(Affiché à l'utilisateur)</p>
                                 </p>
                             </div>
                         </div>
@@ -408,13 +411,11 @@
 <!-- END MODAL ADD NAGE -->
 
 <script>
- 
-    var competitions = <?= json_encode($competitions, JSON_PRETTY_PRINT); ?>;
-    var nonce = '<?= $_SESSION['competition_get_nonce']; ?>';
+    var competitions = '<?= json_encode($competitions) ?>';
+    var nonce = '<?= $_SESSION['competition_edit_nonce'] ?>';
 
     document.getElementById("nage_field").value = '';
     document.getElementById("nage").value = '';
     document.getElementById("nage_distance").value = '';
     document.getElementById("nage_label").value = '';
-    
 </script>

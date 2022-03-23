@@ -1,7 +1,7 @@
 
 function displayModal(idCompetition) {
 
-    var competition = competitions.find(x => x.id == idCompetition);
+    var competition = JSON.parse(competitions).find(x => x.id == idCompetition);
     var action = 'ajax_request_handler';
     var action_type = 'competition_get_nages';
 
@@ -291,6 +291,9 @@ function update_competition(action_competition, id_competition) {
 
     var action = 'ajax_request_handler';
 
+    //document.getElementById('btn-container-loader').style.display = 'block';
+    //document.getElementById('btn-container').style.display = 'none';
+
     if (document.getElementById("modal_table_body")) {
         document.getElementById("modal_table_body").innerHTML = '';
     }
@@ -344,7 +347,7 @@ function update_competition(action_competition, id_competition) {
                         document.getElementById('btn_export').disabled = 'true';
                     }
 
-                    var competition = competitions.find(x => x.id == id_competition);
+                    var competition = JSON.parse(competitions).find(x => x.id == id_competition);
 
                     var date = new Date(competition.date);
                     if (date.getMonth() == 12) {
