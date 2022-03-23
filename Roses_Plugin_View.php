@@ -408,7 +408,7 @@
 <!-- END MODAL ADD NAGE -->
 
 <script>
-
+ 
     var competitions = <?= json_encode($competitions, JSON_PRETTY_PRINT); ?>;
     var nonce = '<?= $_SESSION['competition_get_nonce']; ?>';
 
